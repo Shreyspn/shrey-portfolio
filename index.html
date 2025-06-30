@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e0e0e0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col items-center py-10 px-4 sm:px-6 lg:px-8">
+        <!-- Header/Navigation -->
+        <header class="w-full max-w-6xl mx-auto mb-12 bg-white shadow-lg rounded-xl p-6 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">
+                Shrey Srivastava
+            </h1>
+            <nav class="flex flex-wrap justify-center space-x-4 sm:space-x-6 text-lg font-medium">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out px-3 py-1 rounded-md">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out px-3 py-1 rounded-md">Skills</a>
+                <a href="#my-work" class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out px-3 py-1 rounded-md">My Work</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out px-3 py-1 rounded-md">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="w-full max-w-6xl mx-auto space-y-12">
+
+            <!-- About Me Section -->
+            <section id="about" class="bg-white shadow-lg rounded-xl p-8 md:p-10 transform transition-all duration-300 hover:scale-[1.01]">
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <div class="flex-shrink-0 mb-6 md:mb-0">
+                        <img class="w-40 h-40 rounded-full object-cover shadow-md"
+                             src="PhotoShrey.jpg-c388dfa6-30d9-4e12-8dd3-6246ebc89f01"
+                             alt="Shrey Srivastava's Photo"
+                             onerror="this.onerror=null;this.src='https://placehold.co/160x160/a0c4ff/ffffff?text=Photo+Error';"
+                        >
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-4">Hi, I'm Shrey Srivastava!</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            My journey began in the heat of the newsroom, where I honed my skills as a storyteller and tech journalist. Over the years, I’ve sharpened these skills into a content specialist–and strategic leader, dedicated to crafting stories that inform, engage, and inspire audiences online.
+                        </p>
+                        <p class="text-gray-600 text-md mt-3">
+                            Currently, I'm focused on content strategy and leveraging digital platforms to amplify narratives. Let's connect and build something amazing together!
+                        </p>
+                        <div class="mt-6 flex justify-center md:justify-start space-x-4">
+                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1">
+                                Get in Touch
+                            </a>
+                            <a href="#" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1">
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="bg-white shadow-lg rounded-xl p-8 md:p-10 transform transition-all duration-300 hover:scale-[1.01]">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">My Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Original Skill Card 1 -->
+                    <div class="bg-blue-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-blue-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.707 8.707-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L10 12.586l3.293-3.293a1 1 0 0 1 1.414 1.414z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Content Strategy</h3>
+                        <p class="text-gray-600 text-sm mt-2">Planning, Development, Optimization</p>
+                    </div>
+                    <!-- Original Skill Card 2 -->
+                    <div class="bg-green-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-green-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Journalism</h3>
+                        <p class="text-gray-600 text-sm mt-2">Reporting, Feature Writing, Reviews</p>
+                    </div>
+                    <!-- Original Skill Card 3 -->
+                    <div class="bg-purple-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-purple-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm-2-10h4v2h-4V10z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">SEO & Analytics</h3>
+                        <p class="text-gray-600 text-sm mt-2">Keyword Research, Performance Tracking</p>
+                    </div>
+                    <!-- Original Skill Card 4 -->
+                    <div class="bg-orange-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-orange-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Strategic Leadership</h3>
+                        <p class="text-gray-600 text-sm mt-2">Team Management, Project Coordination</p>
+                    </div>
+
+                    <!-- New Skill Card: Research -->
+                    <div class="bg-blue-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-blue-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5a6.5 6.5 0 10-6.5 6.5c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Research</h3>
+                        <p class="text-gray-600 text-sm mt-2">Data Gathering, Information Synthesis</p>
+                    </div>
+                    <!-- New Skill Card: Fact-Checking -->
+                    <div class="bg-green-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-green-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Fact-Checking</h3>
+                        <p class="text-gray-600 text-sm mt-2">Accuracy Verification, Source Validation</p>
+                    </div>
+                    <!-- New Skill Card: Content Creation & Strategy (reiterating the strategy part) -->
+                    <div class="bg-purple-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-purple-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-2h-4v2h4zm0 4v-2h-4v2h4zM2 16h8v-2H2v2zm18-8V4h-2V2h-2v2h-2v2h2v2h2V8h2z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Content Creation & Strategy</h3>
+                        <p class="text-gray-600 text-sm mt-2">Writing, Planning, Multi-Platform Development</p>
+                    </div>
+                    <!-- New Skill Card: Social Media Management -->
+                    <div class="bg-orange-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-orange-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.34-1.6.57-2.46.69.88-.53 1.56-1.37 1.88-2.37-.83.49-1.75.84-2.73 1.04C18.3 4.25 17.11 3.5 15.82 3.5c-2.3 0-4.17 1.87-4.17 4.17 0 .32.04.63.1.92C7.94 9.17 4.66 7.4 2.45 4.5c-.32.55-.5 1.18-.5 1.86 0 1.44.73 2.7 1.84 3.45-.68-.02-1.3-.2-1.85-.5v.05c0 2.02 1.44 3.7 3.35 4.09-.35.1-.72.15-1.1.15-.27 0-.53-.03-.78-.07.53 1.66 2.07 2.86 3.89 2.9C14 18.06 10.5 19 6.7 19c-.64 0-1.27-.04-1.89-.11C9.69 20.35 14.06 21 18.5 21c4.61 0 7.13-3.79 7.13-7.07 0-.21-.01-.43-.02-.64.49-.35.91-.78 1.25-1.28z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Social Media Management</h3>
+                        <p class="text-gray-600 text-sm mt-2">Strategy, Content Curation, Engagement</p>
+                    </div>
+                    <!-- New Skill Card: Writing -->
+                    <div class="bg-pink-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-pink-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Writing</h3>
+                        <p class="text-gray-600 text-sm mt-2">Journalism, Technical Writing, Copywriting</p>
+                    </div>
+                    <!-- New Skill Card: Editing -->
+                    <div class="bg-teal-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-teal-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.06 9.06L15.94 10.94 6.94 19.94 5.06 18.06 14.06 9.06zm3.32-3.32l-1.41-1.41L12.5 6.06l1.41 1.41 3.47-3.47zm3.17-1.17l-1.41-1.41L16.5 4.93l1.41 1.41 3.47-3.47zM3 18v3h3l12.37-12.37-3-3L3 18z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Editing</h3>
+                        <p class="text-gray-600 text-sm mt-2">Proofreading, Content Refinement, Copyediting</p>
+                    </div>
+                    <!-- New Skill Card: MS Word -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-gray-800" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 19L11 11.25V3h2v7.25L16 19h-1.5zM20 19h-2L15.5 12h-3L10 19H8l3.5-7.75L8 3H6L2 19h2L7 9.5l3.5 7.75 3.5-7.75L18 19h2z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">MS Word</h3>
+                        <p class="text-gray-600 text-sm mt-2">Document Formatting, Collaboration, Advanced Features</p>
+                    </div>
+                    <!-- New Skill Card: MS Excel -->
+                    <div class="bg-blue-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-blue-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-2h2v2zm0-4H7v-2h2v2zm0-4H7V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">MS Excel</h3>
+                        <p class="text-gray-600 text-sm mt-2">Data Analysis, Spreadsheets, Formulas, Charts</p>
+                    </div>
+                    <!-- New Skill Card: MS PowerPoint -->
+                    <div class="bg-green-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-green-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 15h2v2H8v-2zm-3-2H3v2h2v-2zm0-4H3v2h2V9zm0-4H3v2h2V5zm5 8H8v-2h2v2zm0-4H8V7h2v2zm0-4H8V3h2v2zm5 8h-2v-2h2v2zm0-4h-2V7h2v2zm0-4h-2V3h2v2zm5 8h-2v-2h2v2zm0-4h-2V7h2v2zm0-4h-2V3h2v2z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">MS PowerPoint</h3>
+                        <p class="text-gray-600 text-sm mt-2">Presentation Design, Slide Creation, Visual Storytelling</p>
+                    </div>
+                    <!-- New Skill Card: Canva -->
+                    <div class="bg-purple-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-purple-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5h2v-2h-2v2zm1-5c.55 0 1 .45 1 1v2h-2v-2c0-.55.45-1 1-1zm0-3c.55 0 1 .45 1 1v2h-2V9c0-.55.45-1 1-1zm0-3c.55 0 1 .45 1 1v2h-2V6c0-.55.45-1 1-1z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Canva</h3>
+                        <p class="text-gray-600 text-sm mt-2">Graphic Design, Visual Content Creation</p>
+                    </div>
+                    <!-- New Skill Card: Management -->
+                    <div class="bg-orange-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-orange-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-10C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Management</h3>
+                        <p class="text-gray-600 text-sm mt-2">Team Leadership, Project Oversight, Resource Allocation</p>
+                    </div>
+                    <!-- New Skill Card: Coordination -->
+                    <div class="bg-pink-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-pink-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Coordination</h3>
+                        <p class="text-gray-600 text-sm mt-2">Cross-functional Teamwork, Logistics, Event Planning</p>
+                    </div>
+                    <!-- New Skill Card: Media Relations & Storytelling -->
+                    <div class="bg-teal-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-teal-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-10h4v2h-4v-2zm0-4h4v2h-4V6z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Media Relations & Storytelling</h3>
+                        <p class="text-gray-600 text-sm mt-2">Public Relations, Narrative Development, Press Kits</p>
+                    </div>
+                    <!-- New Skill Card: WordPress -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300 ease-in-out">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-gray-800" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-.5 14.5v-9h-1v9h1zM14 14h-1v-4h1v4zm2 2h-1v-6h1v6zM9 14h-1v-4h1v4zM7 16h-1v-9h1v9z"/></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">WordPress</h3>
+                        <p class="text-gray-600 text-sm mt-2">Website Management, Content Publishing, Customization</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- My Work Section -->
+            <section id="my-work" class="bg-white shadow-lg rounded-xl p-8 md:p-10 transform transition-all duration-300 hover:scale-[1.01]">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">My Work</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Work Card 1: Deepfakes -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/400x250/e9ecef/5e6471?text=Deepfakes+Article"
+                             alt="Deepfakes Article Thumbnail"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x250/e9ecef/5e6471?text=Image+Error';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Deepfakes: Swaying Public Opinion</h3>
+                            <p class="text-gray-600 text-sm mb-4">An article exploring how deepfakes can influence public opinion and discredit figures, with insights from experts.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tech Journalism</span>
+                                <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">AI</span>
+                                <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Opinion</span>
+                            </div>
+                            <a href="https://ianslive.in/deepfakes-can-help-sway-public-opinion-discredit-people-or-politicians-experts--20240310170006" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition duration-300 ease-in-out">
+                                Read Article
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Work Card 2: AI Robots -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/400x250/e9ecef/5e6471?text=AI+Robots+Article"
+                             alt="AI Robots Article Thumbnail"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x250/e9ecef/5e6471?text=Image+Error';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">AI Robots as Personal Home Assistants</h3>
+                            <p class="text-gray-600 text-sm mb-4">An in-depth look into the advancements and aspirations of AI robots becoming integral personal assistants in homes.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tech Journalism</span>
+                                <span class="bg-red-200 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">AI</span>
+                                <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Robotics</span>
+                            </div>
+                            <a href="https://ianslive.in/ai-robots-strive-to-become-our-personal-assistants-at-home--20240112203940" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition duration-300 ease-in-out">
+                                Read Article
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Work Card 3: Junk Food & Diabetes -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/400x250/e9ecef/5e6471?text=Health+Article"
+                             alt="Health Article Thumbnail"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x250/e9ecef/5e6471?text=Image+Error';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Junk Food Consumption & Diabetes Link</h3>
+                            <p class="text-gray-600 text-sm mb-4">An article highlighting the concerning correlation between rising junk food consumption and increasing diabetes cases.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-pink-200 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Health Journalism</span>
+                                <span class="bg-teal-200 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Lifestyle</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Research</span>
+                            </div>
+                            <a href="https://ianslive.in/alarming-link-between-increasing-junk-food-consumption-diabetes-cases--20230721171728" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition duration-300 ease-in-out">
+                                Read Article
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Work Card 4: OnePlus 12R Review -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/400x250/e9ecef/5e6471?text=OnePlus+Review"
+                             alt="OnePlus 12R Review Thumbnail"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x250/e9ecef/5e6471?text=Image+Error';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">OnePlus 12R Review</h3>
+                            <p class="text-gray-600 text-sm mb-4">A detailed review of the OnePlus 12R smartphone, focusing on its design, camera, and battery performance.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tech Review</span>
+                                <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Smartphone</span>
+                                <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Gadgets</span>
+                            </div>
+                            <a href="https://ianslive.in/oneplus-12r-smooth-stylish-with-impressive-camera-battery-life--20240206093740" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition duration-300 ease-in-out">
+                                Read Review
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Work Card 5: Global Race for Moon -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/400x250/e9ecef/5e6471?text=Moon+Race+Article"
+                             alt="Moon Race Article Thumbnail"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x250/e9ecef/5e6471?text=Image+Error';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Global Race for the Moon</h3>
+                            <p class="text-gray-600 text-sm mb-4">An article discussing the intensified global competition in lunar exploration, with India's significant achievements.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Space</span>
+                                <span class="bg-red-200 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Science Journalism</span>
+                                <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Geopolitics</span>
+                            </div>
+                            <a href="https://ianslive.in/global-race-for-moon-heats-up-as-india-eyes-key-achievement--20230721193509" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition duration-300 ease-in-out">
+                                Read Article
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Work Card 6: Hypertension & Weather -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/400x250/e9ecef/5e6471?text=Hypertension+Article"
+                             alt="Hypertension Article Thumbnail"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x250/e9ecef/5e6471?text=Image+Error';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Weather's Impact on Blood Pressure</h3>
+                            <p class="text-gray-600 text-sm mb-4">An informative piece on how changes in weather conditions can affect blood pressure and hypertension.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-pink-200 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Health Journalism</span>
+                                <span class="bg-teal-200 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Medical</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Wellness</span>
+                            </div>
+                            <a href="https://ianslive.in/hypertension-pkg-any-change-in-weather-can-also-impact-your-blood-pressure--20230805005353" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition duration-300 ease-in-out">
+                                Read Article
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Work Card 7: Redmi Note 13 Review -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/400x250/e9ecef/5e6471?text=Redmi+Review"
+                             alt="Redmi Note 13 Review Thumbnail"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x250/e9ecef/5e6471?text=Image+Error';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Redmi Note 13 Review</h3>
+                            <p class="text-gray-600 text-sm mb-4">A review of the Redmi Note 13, highlighting its features as a well-rounded mid-range smartphone with a stylish design.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tech Review</span>
+                                <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Smartphone</span>
+                                <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Gadgets</span>
+                            </div>
+                            <a href="https://ianslive.in/redmi-note-13-well-rounded-mid-range-smartphone-with-stylish-design--20240114125148" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition duration-300 ease-in-out">
+                                Read Review
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Work Card 8: Galaxy Watch 6 Review -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/400x250/e9ecef/5e6471?text=Galaxy+Watch+Review"
+                             alt="Galaxy Watch 6 Review Thumbnail"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x250/e9ecef/5e6471?text=Image+Error';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Samsung Galaxy Watch 6 Review</h3>
+                            <p class="text-gray-600 text-sm mb-4">A review of the Samsung Galaxy Watch 6, praising its smooth, user-friendly interface and battery life.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tech Review</span>
+                                <span class="bg-red-200 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Smartwatch</span>
+                                <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Wearables</span>
+                            </div>
+                            <a href="http://ianslive.in/galaxy-watch-6-smooth-user-friendly-with-good-battery-life--20230919131659" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition duration-300 ease-in-out">
+                                Read Review
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Work Card 9: CMF Watch Pro Review -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                             src="https://placehold.co/400x250/e9ecef/5e6471?text=CMF+Watch+Review"
+                             alt="CMF Watch Pro Review Thumbnail"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x250/e9ecef/5e6471?text=Image+Error';"
+                        >
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">CMF Watch Pro Review</h3>
+                            <p class="text-gray-600 text-sm mb-4">A review of the CMF Watch Pro, positioned as a budget-friendly smartwatch with standard features and impressive battery life.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-pink-200 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tech Review</span>
+                                <span class="bg-teal-200 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Smartwatch</span>
+                                <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Wearables</span>
+                            </div>
+                            <a href="https://ianslive.in/cmf-watch-pro-budget-smartwatch-with-standard-features-great-battery-life--20231001102801" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition duration-300 ease-in-out">
+                                Read Review
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Get in Touch Section -->
+            <section id="contact" class="bg-white shadow-lg rounded-xl p-8 md:p-10 transform transition-all duration-300 hover:scale-[1.01] text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+                <div class="flex flex-col items-center space-y-6">
+                    <p class="text-gray-700 text-lg flex items-center">
+                        <i class="fas fa-envelope text-blue-600 mr-3 text-2xl"></i>
+                        Gmail: <a href="mailto:shreyspn@gmail.com" class="text-blue-600 hover:underline ml-2">shreyspn@gmail.com</a>
+                    </p>
+                    <p class="text-gray-700 text-lg flex items-center">
+                        <i class="fas fa-phone-alt text-blue-600 mr-3 text-2xl"></i>
+                        Phone: <a href="tel:+918175937590" class="text-blue-600 hover:underline ml-2">+91 8175937590</a>
+                    </p>
+                    <div class="flex space-x-6 mt-4">
+                        <a href="https://www.linkedin.com/in/shrey-srivastava-446770167/" target="_blank" class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                            <i class="fab fa-linkedin text-4xl"></i>
+                        </a>
+                        <a href="https://x.com/shreyspn" target="_blank" class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                            <i class="fab fa-twitter-square text-4xl"></i> <!-- Using Twitter icon for X, common practice -->
+                        </a>
+                        <a href="https://www.instagram.com/shrey26_01?utm_source=qr&igsh=MWVvMHo5Y2txY2h0Zw==" target="_blank" class="text-gray-700 hover:text-blue-600 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                            <i class="fab fa-instagram-square text-4xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full max-w-6xl mx-auto mt-12 bg-white shadow-lg rounded-xl p-6 text-center text-gray-600 text-sm">
+            &copy; 2025 Shrey Srivastava. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
